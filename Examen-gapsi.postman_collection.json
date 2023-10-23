@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "84f5e482-f8e1-4a41-83ab-abb4d21f2c58",
+		"name": "Examen-gapsi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5525966",
+		"_collection_link": "https://proyectfilas.postman.co/workspace/Team-Workspace~ca285ed3-15b7-4cdc-8426-275a3c99999c/collection/5525966-84f5e482-f8e1-4a41-83ab-abb4d21f2c58?action=share&source=collection_link&creator=5525966"
+	},
+	"item": [
+		{
+			"name": "Provedores",
+			"item": [
+				{
+					"name": "Nuevo provedor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 12,\r\n  \"nombre\": \"Proveedor Alexis\",\r\n  \"direccion\": \"Calle Principal 789\",\r\n  \"telefono\": \"555-123-4567\",\r\n  \"correo\": \"proveedorxyz@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/suppliers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar provedor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"nombre\": \"Proveedor Alexis \",\r\n    \"direccion\": \"Calle Principal 789\",\r\n    \"telefono\": \"555-123-45671\",\r\n    \"correo\": \"proveedorxyz@example.com3\"\r\n}                                                                                           ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/edit-suppliers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"edit-suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Provedores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/suppliers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
